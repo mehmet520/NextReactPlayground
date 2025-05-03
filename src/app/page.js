@@ -1,95 +1,51 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from 'next/link';
+import './homePage.css'; // Import CSS for styling
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    <>
+      <h1>Willkommen zur Anwendung</h1>
+      <p className="description">
+        Diese Anwendung ist eine Sammlung einfacher Module, die entwickelt wurden, um das Verständnis von React-Konzepten während des Lernens zu erleichtern. 
+        Jedes Modul demonstriert spezifische Funktionen von React, wie z. B. Zustandsverwaltung, Hooks und Komponentenkomposition.
+      </p>
+      <ul>
+        <li>
+          <Link href="/product">
+            Produktseite - Erkunden Sie Produkte und interagieren Sie mit Produkt- und Benutzerkarten.
+          </Link>
+        </li>
+        <li>
+          <Link href="/formControl">
+            Formularsteuerungsseite - Verwalten und Vorschau von Benutzerdaten dynamisch.
+          </Link>
+        </li>
+        <li>
+          <Link href="/layout">
+            Layout-Modul - Demonstriert die Komposition und Layoutverwaltung in React.
+          </Link>
+        </li>
+        <li>
+          <Link href="/meals">
+            Mahlzeiten-Modul - Erklärt die Zustandsverwaltung und das dynamische Rendern von Listen in React.
+          </Link>
+        </li>
+        <li>
+          <Link href="/product2">
+            Produkt2-Modul - Konzentriert sich auf die Wiederverwendung von Komponenten und die Handhabung von Props in React.
+          </Link>
+        </li>
+        <li>
+          <Link href="/timeShow">
+            TimeShow-Modul - Hebt den useEffect-Hook in React zur Verwaltung von Nebeneffekten hervor.
+          </Link>
+        </li>
+        <li>
+          <Link href="/useContext">
+            UseContent-Modul - Erforscht die Context-API von React zur Verwaltung globaler Zustände.
+          </Link>
+        </li>
+      </ul>
+    </>
   );
 }

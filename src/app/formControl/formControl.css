@@ -1,0 +1,37 @@
+.form-control-page {
+  background-color: #e6f7ff; /* Light blue background for better contrast */
+  color: #1a1a1a; /* Dark text for readability */
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-control-page h1 {
+  color: #004080; /* Dark blue for headings */
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-control-page p {
+  color: #2a2a2a; /* Dark gray for paragraphs */
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.form-control-page .form-data {
+  background-color: #ffffff; /* White background for JSON data */
+  color: #000000; /* Black text for JSON data */
+  padding: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  font-family: monospace;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
