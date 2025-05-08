@@ -9,8 +9,8 @@ export default async function ProductDetailPage({ params }) {
   if (!res.ok) {
     return (
       <div>
-        <h1>Ürün Bulunamadı</h1>
-        <p>Geçersiz ürün ID: {id}</p>
+        <h1>Produkt nicht gefunden</h1>
+        <p>Ungültige Produkt-ID: {id}</p>
       </div>
     );
   }
@@ -20,8 +20,8 @@ export default async function ProductDetailPage({ params }) {
   return (
     <div style={{ padding: '2rem' }}>
       <h1>{product.name}</h1>
-      <p><strong>Fiyat:</strong> {product.price}</p>
-      <p><strong>Açıklama:</strong> {product.description}</p>
+      <p><strong>Preis:</strong> {product.price}</p>
+      <p><strong>Beschreibung:</strong> {product.description}</p>
     </div>
   );
 }

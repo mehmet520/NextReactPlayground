@@ -47,12 +47,12 @@ export default function HomePage() {
         </li>
         <li>
           <Link href="/optional-box-visible">
-            OptionalBox-Modul - 
+            OptionalBox-Modul - Demonstriert die bedingte Anzeige von Komponenten in React.
           </Link>
         </li>
         <li>
           <Link href="/use-router-query">
-            useRouter.Query-Modul - 
+            useRouter.Query-Modul - Demonstriert die Verwendung von Routenparametern und API-Interaktionen in React.
           </Link>
         </li>
       </ul>

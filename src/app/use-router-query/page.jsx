@@ -11,7 +11,7 @@ export default function ProductListPage() {
       const res = await fetch('/api/use-router-query/product');
       const data = await res.json();
 
-// obje donerse objeyi diziye cevir
+      // obje donerse objeyi diziye cevir
       const productArray = Object.entries(data).map(([id, value]) => ({
         id,
         ...value,
@@ -24,7 +24,7 @@ export default function ProductListPage() {
 
   return (
     <div style={{ padding: '2rem' }}>
-      <h1>Ürün Listesi</h1>
+      <h1>Produktliste</h1>
       <ul>
         {products.map((product) => (
           <li key={product.id}>
@@ -35,9 +35,8 @@ export default function ProductListPage() {
         ))}
       </ul>
       <Link href="/use-router-query/product/create">
-        <button>Ürün Ekle</button>
+        <button>Produkt hinzufügen</button>
       </Link>
     </div>
-
   );
 }
