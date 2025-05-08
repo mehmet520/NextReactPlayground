@@ -45,6 +45,16 @@ export default function HomePage() {
             UseContent-Modul - Erforscht die Context-API von React zur Verwaltung globaler Zustände.
           </Link>
         </li>
+        <li>
+          <Link href="/optional-box-visible">
+            OptionalBox-Modul - 
+          </Link>
+        </li>
+        <li>
+          <Link href="/use-router-query">
+            useRouter.Query-Modul - 
+          </Link>
+        </li>
       </ul>
     </>
   );
